@@ -1,0 +1,50 @@
+02/06/2016 18:25:39 System.IO.IOException: The port 'COM1' does not exist.
+   at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at Mixing_Scanning_Interlock.Form1.ConnectSerial() in C:\Users\Criselda\Desktop\MixingTHesis  FInal\Apps\WithScanning\Mixing_Scanning_Interlock\Mixing_Scanning_Interlock\Form1.vb:line 131/The Serial Port Is in Use
+02/06/2016 18:26:51 System.IO.IOException: The port 'COM1' does not exist.
+   at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at Mixing_Scanning_Interlock.Form1.ConnectSerial() in C:\Users\Criselda\Desktop\MixingTHesis  FInal\Apps\WithScanning\Mixing_Scanning_Interlock\Mixing_Scanning_Interlock\Form1.vb:line 131/The Serial Port Is in Use
+02/06/2016 18:27:31 System.IO.IOException: The port 'COM1' does not exist.
+   at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at Mixing_Scanning_Interlock.Form1.ConnectSerial() in C:\Users\Criselda\Desktop\MixingTHesis  FInal\Apps\WithScanning\Mixing_Scanning_Interlock\Mixing_Scanning_Interlock\Form1.vb:line 131/The Serial Port Is in Use
+02/06/2016 18:28:32 YPH-0065
+02/06/2016 18:28:39 U0J0F3332       CUFCS1MR--100020160602000000
+02/06/2016 18:28:53 6:28:53 PM_CUFCS1MR
+02/06/2016 18:28:55 6:28:55 PM_
+02/06/2016 18:28:59 6:28:59 PM_
+02/06/2016 18:57:59 YPH-3621
+02/06/2016 18:58:03 U0J0F3332       CUFCS1MR--100020160602000000
+02/06/2016 18:58:17 6:58:17 PM_CUFCS1MR
+02/06/2016 18:59:08 YPH-3621
+02/06/2016 18:59:11 U0J0F3332       CUFCS1MR--100020160602000000
+02/06/2016 19:02:39 YPH-0065
+02/06/2016 19:02:41 U0J0F3332       CUFCS1MR--100020160602000000
+02/06/2016 19:02:55 7:02:55 PM_CUFCS1MR
+02/06/2016 19:03:29 YPH-3621
+02/06/2016 19:03:32 U0J0F3332       CUFCS1MR--100020160602000000
+02/06/2016 19:03:46 7:03:46 PM_CUFCS1MR
+02/06/2016 19:04:04 YPH-0065
+02/06/2016 19:04:06 U0J0F3332       CUFCS1MR--100020160602000000
+02/06/2016 19:08:35 YPH-3621
+02/06/2016 19:08:36 U0J0F3332       CUFCS1MR--100020160602000000
+02/06/2016 19:08:43 YPH-0065
+02/06/2016 19:08:47 7:08:47 PM_CUFCS1MR
+02/06/2016 19:50:00 YPH-3621
+02/06/2016 19:50:02 U0J0F4062       CUFCS3JE--070020161210000000
+02/06/2016 19:50:12 7:50:12 PM_CUFCS3JE
+02/06/2016 19:50:14 7:50:14 PM_
+02/06/2016 19:50:23 YPH-3621
+02/06/2016 19:50:26 U0J0F4055       CUFCS1PA--090020160604000000
+02/06/2016 19:50:35 7:50:35 PM_CUFCS1PA
+02/06/2016 19:57:23 YPH-3621
+02/06/2016 19:57:34 U0J0F3370       CUFBS5CK--040020161124000000
+02/06/2016 19:57:50 7:57:50 PM_CUFBS5CK
+02/06/2016 20:48:17 YPH-3621
+02/06/2016 20:48:25 U0J0F3370       CUFBS5CK--040020161124000000
+02/06/2016 20:48:40 8:48:40 PM_CUFBS5CK

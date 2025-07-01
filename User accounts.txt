@@ -1,0 +1,8 @@
+Manager/Supervisor
+
+Username: 0065
+Password: 4885
+
+Operator/Viewer
+Username: 3627
+Password: 7671

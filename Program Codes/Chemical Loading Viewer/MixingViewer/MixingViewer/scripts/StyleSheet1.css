@@ -1,0 +1,93 @@
+﻿.css_div_title {
+    text-align: center;
+    color: blue;
+    font-size: 16px;
+    font-family: 'segoe UI','Times New Roman',Georgia, Helvetica, Verdana, sans-serif, Geneva;
+    height: 100%;
+    font-weight: bold;
+}
+
+.css_machine {
+    text-align: center;
+    color: maroon;
+    font-size: 16px;
+    font-family: 'segoe UI','Times New Roman',Georgia, Helvetica, Verdana, sans-serif, Geneva;
+    height: 100%;
+    font-weight: bold;
+}
+
+.css_generated {
+    text-align: center;
+    color: black;
+    font-size: 10px;
+    font-family: 'segoe UI','Times New Roman',Georgia, Helvetica, Verdana, sans-serif, Geneva;
+    height: 100%;
+    font-weight: normal;
+}
+
+.company_logo {
+    background-color: #000000;
+    background-image: url("./pictures/company_logo.jpg");
+    height: 85px;
+    background-repeat: no-repeat;
+}
+
+.page_title {
+    font-family: 'Georgia', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    color: #cccccc;
+    text-align: right;
+    padding: 15px 15px 5px 0;
+}
+
+.red_border {
+    height: 12px;
+    background-color: #990000;
+}
+
+.btn_blue {
+    cursor: pointer;
+    border: 2px solid #fff;
+    background-color: #2EAFB0;
+    font-family: 'segoe UI',Tahoma, Helvetica, Verdana, sans-serif,, Geneva;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 10px 20px;
+    color: white;
+    margin: 5px;
+}
+
+.dateTime {
+    font-family: 'segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    color: #cccccc;
+    text-align: right;
+    padding: 0px 15px;
+}
+
+select, input[type=text] {
+    font-family: 'segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    /*padding: 7px;*/
+    background-color: aliceblue;
+}
+
+.TableStyle {
+    /*all*/
+    /*border-radius: 5px;
+    border: 2px solid #890d0d;*/
+
+}
+
+    .TableStyle tr {
+        /*per tr*/
+        background-color: #F5FFFA;
+        width: 200px;
+    }
+
+    .TableStyle th {
+        background-color: green;
+    }
+
+table.center {
+}

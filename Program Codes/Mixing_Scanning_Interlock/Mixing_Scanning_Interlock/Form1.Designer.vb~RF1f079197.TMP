@@ -1,0 +1,797 @@
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+Partial Class Form1
+    Inherits System.Windows.Forms.Form
+
+    'Form overrides dispose to clean up the component list.
+    <System.Diagnostics.DebuggerNonUserCode()> _
+    Protected Overrides Sub Dispose(ByVal disposing As Boolean)
+        Try
+            If disposing AndAlso components IsNot Nothing Then
+                components.Dispose()
+            End If
+        Finally
+            MyBase.Dispose(disposing)
+        End Try
+    End Sub
+
+    'Required by the Windows Form Designer
+    Private components As System.ComponentModel.IContainer
+
+    'NOTE: The following procedure is required by the Windows Form Designer
+    'It can be modified using the Windows Form Designer.  
+    'Do not modify it using the code editor.
+    <System.Diagnostics.DebuggerStepThrough()> _
+    Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
+        Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.machine_name = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.lblID = New System.Windows.Forms.Label()
+        Me.lblFName = New System.Windows.Forms.TextBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.lblDepartment = New System.Windows.Forms.Label()
+        Me.lblTitleR = New System.Windows.Forms.Label()
+        Me.deliveryScan = New System.Windows.Forms.TextBox()
+        Me.idscan = New System.Windows.Forms.TextBox()
+        Me.appendTagId = New System.Windows.Forms.TextBox()
+        Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
+        Me.status_date = New System.Windows.Forms.ToolStripStatusLabel()
+        Me.status_time = New System.Windows.Forms.ToolStripStatusLabel()
+        Me.DateTimer = New System.Windows.Forms.Timer(Me.components)
+        Me.login = New System.Windows.Forms.Timer(Me.components)
+        Me.Substring = New System.Windows.Forms.Timer(Me.components)
+        Me.concatenateTimer = New System.Windows.Forms.Timer(Me.components)
+        Me.Blink = New System.Windows.Forms.Timer(Me.components)
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Aweight = New System.Windows.Forms.TextBox()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Button12 = New System.Windows.Forms.Button()
+        Me.Button11 = New System.Windows.Forms.Button()
+        Me.btn_oK = New System.Windows.Forms.Button()
+        Me.Button9 = New System.Windows.Forms.Button()
+        Me.Button8 = New System.Windows.Forms.Button()
+        Me.Button7 = New System.Windows.Forms.Button()
+        Me.Button6 = New System.Windows.Forms.Button()
+        Me.Button5 = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.perkg = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.SerialPort1 = New System.IO.Ports.SerialPort(Me.components)
+        Me.accountability = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.txtReceived = New System.Windows.Forms.TextBox()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.btn_tag_name = New System.Windows.Forms.Button()
+        Me.SVLIABLE = New System.Windows.Forms.TextBox()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.sv_loginTimer = New System.Windows.Forms.Timer(Me.components)
+        Me.btn_shw_tag = New System.Windows.Forms.Button()
+        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.Panel5 = New System.Windows.Forms.Panel()
+        Me.Panel4.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.StatusStrip1.SuspendLayout()
+        Me.Panel1.SuspendLayout()
+        Me.GroupBox1.SuspendLayout()
+        Me.GroupBox2.SuspendLayout()
+        Me.Panel2.SuspendLayout()
+        Me.Panel5.SuspendLayout()
+        Me.SuspendLayout()
+        '
+        'Panel4
+        '
+        Me.Panel4.BackColor = System.Drawing.Color.DarkGray
+        Me.Panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel4.Controls.Add(Me.Label9)
+        Me.Panel4.Controls.Add(Me.machine_name)
+        Me.Panel4.Controls.Add(Me.Label6)
+        Me.Panel4.Location = New System.Drawing.Point(668, 5)
+        Me.Panel4.Name = "Panel4"
+        Me.Panel4.Size = New System.Drawing.Size(351, 66)
+        Me.Panel4.TabIndex = 407
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Location = New System.Drawing.Point(247, 48)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(99, 13)
+        Me.Label9.TabIndex = 426
+        Me.Label9.Text = "Version : 09242014"
+        '
+        'machine_name
+        '
+        Me.machine_name.AutoSize = True
+        Me.machine_name.Font = New System.Drawing.Font("Arial", 20.0!, System.Drawing.FontStyle.Bold)
+        Me.machine_name.ForeColor = System.Drawing.Color.White
+        Me.machine_name.Location = New System.Drawing.Point(45, 12)
+        Me.machine_name.Name = "machine_name"
+        Me.machine_name.Size = New System.Drawing.Size(75, 32)
+        Me.machine_name.TabIndex = 234
+        Me.machine_name.Text = "0000"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Arial", 20.0!, System.Drawing.FontStyle.Bold)
+        Me.Label6.ForeColor = System.Drawing.Color.White
+        Me.Label6.Location = New System.Drawing.Point(122, 12)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(185, 32)
+        Me.Label6.TabIndex = 157
+        Me.Label6.Text = " INTERLOCK"
+        '
+        'lblID
+        '
+        Me.lblID.AutoSize = True
+        Me.lblID.Font = New System.Drawing.Font("Arial", 12.0!)
+        Me.lblID.Location = New System.Drawing.Point(143, 46)
+        Me.lblID.Name = "lblID"
+        Me.lblID.Size = New System.Drawing.Size(0, 18)
+        Me.lblID.TabIndex = 403
+        '
+        'lblFName
+        '
+        Me.lblFName.BackColor = System.Drawing.SystemColors.Control
+        Me.lblFName.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.lblFName.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.lblFName.Font = New System.Drawing.Font("Arial Black", 20.0!)
+        Me.lblFName.Location = New System.Drawing.Point(139, 6)
+        Me.lblFName.MaxLength = 500
+        Me.lblFName.Name = "lblFName"
+        Me.lblFName.Size = New System.Drawing.Size(416, 38)
+        Me.lblFName.TabIndex = 402
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.SystemColors.Control
+        Me.PictureBox1.ErrorImage = Nothing
+        Me.PictureBox1.InitialImage = Nothing
+        Me.PictureBox1.Location = New System.Drawing.Point(5, 5)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(131, 122)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 406
+        Me.PictureBox1.TabStop = False
+        '
+        'lblDepartment
+        '
+        Me.lblDepartment.AutoSize = True
+        Me.lblDepartment.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblDepartment.Location = New System.Drawing.Point(143, 69)
+        Me.lblDepartment.Name = "lblDepartment"
+        Me.lblDepartment.Size = New System.Drawing.Size(0, 18)
+        Me.lblDepartment.TabIndex = 404
+        '
+        'lblTitleR
+        '
+        Me.lblTitleR.AutoSize = True
+        Me.lblTitleR.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTitleR.Location = New System.Drawing.Point(143, 94)
+        Me.lblTitleR.Name = "lblTitleR"
+        Me.lblTitleR.Size = New System.Drawing.Size(0, 18)
+        Me.lblTitleR.TabIndex = 405
+        '
+        'deliveryScan
+        '
+        Me.deliveryScan.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.deliveryScan.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.deliveryScan.Enabled = False
+        Me.deliveryScan.Font = New System.Drawing.Font("Microsoft Sans Serif", 30.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.deliveryScan.Location = New System.Drawing.Point(300, 200)
+        Me.deliveryScan.MaxLength = 2
+        Me.deliveryScan.Name = "deliveryScan"
+        Me.deliveryScan.ReadOnly = True
+        Me.deliveryScan.Size = New System.Drawing.Size(282, 53)
+        Me.deliveryScan.TabIndex = 401
+        Me.deliveryScan.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'idscan
+        '
+        Me.idscan.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.idscan.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.idscan.Font = New System.Drawing.Font("Microsoft Sans Serif", 30.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.idscan.Location = New System.Drawing.Point(12, 200)
+        Me.idscan.MaxLength = 8
+        Me.idscan.Name = "idscan"
+        Me.idscan.Size = New System.Drawing.Size(282, 53)
+        Me.idscan.TabIndex = 400
+        Me.idscan.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'appendTagId
+        '
+        Me.appendTagId.BackColor = System.Drawing.SystemColors.Control
+        Me.appendTagId.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.appendTagId.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.appendTagId.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.appendTagId.Location = New System.Drawing.Point(749, 727)
+        Me.appendTagId.MaxLength = 500
+        Me.appendTagId.Name = "appendTagId"
+        Me.appendTagId.ReadOnly = True
+        Me.appendTagId.Size = New System.Drawing.Size(270, 12)
+        Me.appendTagId.TabIndex = 408
+        Me.appendTagId.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'StatusStrip1
+        '
+        Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.status_date, Me.status_time})
+        Me.StatusStrip1.Location = New System.Drawing.Point(0, 742)
+        Me.StatusStrip1.Name = "StatusStrip1"
+        Me.StatusStrip1.Size = New System.Drawing.Size(1024, 26)
+        Me.StatusStrip1.TabIndex = 409
+        Me.StatusStrip1.Text = "StatusStrip1"
+        '
+        'status_date
+        '
+        Me.status_date.Font = New System.Drawing.Font("Segoe UI", 12.0!)
+        Me.status_date.ForeColor = System.Drawing.Color.Red
+        Me.status_date.Name = "status_date"
+        Me.status_date.RightToLeftAutoMirrorImage = True
+        Me.status_date.Size = New System.Drawing.Size(504, 21)
+        Me.status_date.Spring = True
+        Me.status_date.Text = "00-00-0000"
+        Me.status_date.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'status_time
+        '
+        Me.status_time.Font = New System.Drawing.Font("Segoe UI", 12.0!)
+        Me.status_time.ForeColor = System.Drawing.Color.Red
+        Me.status_time.Name = "status_time"
+        Me.status_time.Size = New System.Drawing.Size(504, 21)
+        Me.status_time.Spring = True
+        Me.status_time.Text = "00:00:00 00"
+        Me.status_time.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'DateTimer
+        '
+        '
+        'login
+        '
+        Me.login.Interval = 300
+        '
+        'Substring
+        '
+        Me.Substring.Interval = 500
+        '
+        'concatenateTimer
+        '
+        Me.concatenateTimer.Interval = 1500
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Arial", 40.0!, System.Drawing.FontStyle.Bold)
+        Me.Label5.ForeColor = System.Drawing.Color.Black
+        Me.Label5.Location = New System.Drawing.Point(345, 135)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(203, 63)
+        Me.Label5.TabIndex = 411
+        Me.Label5.Text = "TAG ID"
+        Me.Label5.Visible = False
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Arial", 40.0!, System.Drawing.FontStyle.Bold)
+        Me.Label7.ForeColor = System.Drawing.Color.Black
+        Me.Label7.Location = New System.Drawing.Point(32, 135)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(247, 63)
+        Me.Label7.TabIndex = 410
+        Me.Label7.Text = "SCAN ID"
+        Me.Label7.Visible = False
+        '
+        'Aweight
+        '
+        Me.Aweight.BackColor = System.Drawing.Color.Black
+        Me.Aweight.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.Aweight.Font = New System.Drawing.Font("Arial", 100.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Aweight.ForeColor = System.Drawing.Color.White
+        Me.Aweight.Location = New System.Drawing.Point(30, 16)
+        Me.Aweight.MaxLength = 4
+        Me.Aweight.Name = "Aweight"
+        Me.Aweight.ReadOnly = True
+        Me.Aweight.Size = New System.Drawing.Size(277, 154)
+        Me.Aweight.TabIndex = 412
+        Me.Aweight.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.Color.Red
+        Me.Panel1.Controls.Add(Me.Label3)
+        Me.Panel1.Controls.Add(Me.Button12)
+        Me.Panel1.Controls.Add(Me.Button11)
+        Me.Panel1.Controls.Add(Me.btn_oK)
+        Me.Panel1.Controls.Add(Me.Button9)
+        Me.Panel1.Controls.Add(Me.Button8)
+        Me.Panel1.Controls.Add(Me.Button7)
+        Me.Panel1.Controls.Add(Me.Button6)
+        Me.Panel1.Controls.Add(Me.Button5)
+        Me.Panel1.Controls.Add(Me.Button4)
+        Me.Panel1.Controls.Add(Me.Button3)
+        Me.Panel1.Controls.Add(Me.Button2)
+        Me.Panel1.Controls.Add(Me.Button1)
+        Me.Panel1.Location = New System.Drawing.Point(12, 257)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(570, 348)
+        Me.Panel1.TabIndex = 416
+        Me.Panel1.Visible = False
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 30.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.Color.White
+        Me.Label3.Location = New System.Drawing.Point(13, 15)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(542, 46)
+        Me.Label3.TabIndex = 85
+        Me.Label3.Text = "INPUT DESIRE LOAD BAGS"
+        '
+        'Button12
+        '
+        Me.Button12.BackColor = System.Drawing.Color.White
+        Me.Button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button12.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button12.ForeColor = System.Drawing.Color.Red
+        Me.Button12.Location = New System.Drawing.Point(397, 235)
+        Me.Button12.Name = "Button12"
+        Me.Button12.Size = New System.Drawing.Size(112, 83)
+        Me.Button12.TabIndex = 84
+        Me.Button12.Text = "CLEAR"
+        Me.Button12.UseVisualStyleBackColor = False
+        '
+        'Button11
+        '
+        Me.Button11.BackColor = System.Drawing.Color.White
+        Me.Button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button11.Font = New System.Drawing.Font("Microsoft Sans Serif", 35.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button11.Location = New System.Drawing.Point(397, 64)
+        Me.Button11.Name = "Button11"
+        Me.Button11.Size = New System.Drawing.Size(112, 83)
+        Me.Button11.TabIndex = 83
+        Me.Button11.Text = "0"
+        Me.Button11.UseVisualStyleBackColor = False
+        '
+        'btn_oK
+        '
+        Me.btn_oK.BackColor = System.Drawing.Color.White
+        Me.btn_oK.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_oK.Font = New System.Drawing.Font("Microsoft Sans Serif", 35.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_oK.Location = New System.Drawing.Point(397, 150)
+        Me.btn_oK.Name = "btn_oK"
+        Me.btn_oK.Size = New System.Drawing.Size(112, 83)
+        Me.btn_oK.TabIndex = 82
+        Me.btn_oK.Text = "OK"
+        Me.btn_oK.UseVisualStyleBackColor = False
+        '
+        'Button9
+        '
+        Me.Button9.BackColor = System.Drawing.Color.White
+        Me.Button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button9.Font = New System.Drawing.Font("Microsoft Sans Serif", 35.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button9.Location = New System.Drawing.Point(282, 235)
+        Me.Button9.Name = "Button9"
+        Me.Button9.Size = New System.Drawing.Size(112, 83)
+        Me.Button9.TabIndex = 81
+        Me.Button9.Text = "9"
+        Me.Button9.UseVisualStyleBackColor = False
+        '
+        'Button8
+        '
+        Me.Button8.BackColor = System.Drawing.Color.White
+        Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button8.Font = New System.Drawing.Font("Microsoft Sans Serif", 35.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button8.Location = New System.Drawing.Point(168, 235)
+        Me.Button8.Name = "Button8"
+        Me.Button8.Size = New System.Drawing.Size(112, 83)
+        Me.Button8.TabIndex = 80
+        Me.Button8.Text = "8"
+        Me.Button8.UseVisualStyleBackColor = False
+        '
+        'Button7
+        '
+        Me.Button7.BackColor = System.Drawing.Color.White
+        Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button7.Font = New System.Drawing.Font("Microsoft Sans Serif", 35.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button7.Location = New System.Drawing.Point(53, 235)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(112, 83)
+        Me.Button7.TabIndex = 79
+        Me.Button7.Text = "7"
+        Me.Button7.UseVisualStyleBackColor = False
+        '
+        'Button6
+        '
+        Me.Button6.BackColor = System.Drawing.Color.White
+        Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button6.Font = New System.Drawing.Font("Microsoft Sans Serif", 35.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button6.Location = New System.Drawing.Point(282, 150)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(112, 83)
+        Me.Button6.TabIndex = 78
+        Me.Button6.Text = "6"
+        Me.Button6.UseVisualStyleBackColor = False
+        '
+        'Button5
+        '
+        Me.Button5.BackColor = System.Drawing.Color.White
+        Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button5.Font = New System.Drawing.Font("Microsoft Sans Serif", 35.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button5.Location = New System.Drawing.Point(168, 150)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(112, 83)
+        Me.Button5.TabIndex = 77
+        Me.Button5.Text = "5"
+        Me.Button5.UseVisualStyleBackColor = False
+        '
+        'Button4
+        '
+        Me.Button4.BackColor = System.Drawing.Color.White
+        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 35.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button4.Location = New System.Drawing.Point(53, 150)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(112, 83)
+        Me.Button4.TabIndex = 76
+        Me.Button4.Text = "4"
+        Me.Button4.UseVisualStyleBackColor = False
+        '
+        'Button3
+        '
+        Me.Button3.BackColor = System.Drawing.Color.White
+        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 35.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button3.Location = New System.Drawing.Point(282, 64)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(112, 83)
+        Me.Button3.TabIndex = 75
+        Me.Button3.Text = "3"
+        Me.Button3.UseVisualStyleBackColor = False
+        '
+        'Button2
+        '
+        Me.Button2.BackColor = System.Drawing.Color.White
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 35.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.Location = New System.Drawing.Point(168, 64)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(112, 83)
+        Me.Button2.TabIndex = 74
+        Me.Button2.Text = "2"
+        Me.Button2.UseVisualStyleBackColor = False
+        '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.Color.White
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 35.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Location = New System.Drawing.Point(53, 64)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(112, 83)
+        Me.Button1.TabIndex = 73
+        Me.Button1.Text = "1"
+        Me.Button1.UseVisualStyleBackColor = False
+        '
+        'GroupBox1
+        '
+        Me.GroupBox1.Controls.Add(Me.Aweight)
+        Me.GroupBox1.ForeColor = System.Drawing.Color.White
+        Me.GroupBox1.Location = New System.Drawing.Point(7, 2)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(337, 175)
+        Me.GroupBox1.TabIndex = 417
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "LOAD BAGS"
+        '
+        'GroupBox2
+        '
+        Me.GroupBox2.Controls.Add(Me.perkg)
+        Me.GroupBox2.ForeColor = System.Drawing.Color.White
+        Me.GroupBox2.Location = New System.Drawing.Point(7, 179)
+        Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.Size = New System.Drawing.Size(337, 175)
+        Me.GroupBox2.TabIndex = 418
+        Me.GroupBox2.TabStop = False
+        Me.GroupBox2.Text = "KILOGRAM/BAGS"
+        '
+        'perkg
+        '
+        Me.perkg.BackColor = System.Drawing.Color.Black
+        Me.perkg.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.perkg.Font = New System.Drawing.Font("Arial", 100.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.perkg.ForeColor = System.Drawing.Color.White
+        Me.perkg.Location = New System.Drawing.Point(28, 16)
+        Me.perkg.MaxLength = 4
+        Me.perkg.Name = "perkg"
+        Me.perkg.ReadOnly = True
+        Me.perkg.Size = New System.Drawing.Size(279, 154)
+        Me.perkg.TabIndex = 412
+        Me.perkg.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Arial", 40.0!, System.Drawing.FontStyle.Bold)
+        Me.Label1.ForeColor = System.Drawing.Color.Red
+        Me.Label1.Location = New System.Drawing.Point(345, 135)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(203, 63)
+        Me.Label1.TabIndex = 419
+        Me.Label1.Text = "TAG ID"
+        Me.Label1.Visible = False
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Arial", 40.0!, System.Drawing.FontStyle.Bold)
+        Me.Label2.ForeColor = System.Drawing.Color.Red
+        Me.Label2.Location = New System.Drawing.Point(32, 135)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(247, 63)
+        Me.Label2.TabIndex = 420
+        Me.Label2.Text = "SCAN ID"
+        Me.Label2.Visible = False
+        '
+        'SerialPort1
+        '
+        '
+        'accountability
+        '
+        Me.accountability.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.accountability.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.accountability.Font = New System.Drawing.Font("Arial", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.accountability.Location = New System.Drawing.Point(669, 620)
+        Me.accountability.Name = "accountability"
+        Me.accountability.Size = New System.Drawing.Size(351, 38)
+        Me.accountability.TabIndex = 421
+        Me.accountability.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(423, 726)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(98, 13)
+        Me.Label4.TabIndex = 423
+        Me.Label4.Text = "COMPORT NAME:"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(525, 726)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(31, 13)
+        Me.Label8.TabIndex = 422
+        Me.Label8.Text = "0000"
+        '
+        'txtReceived
+        '
+        Me.txtReceived.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtReceived.Location = New System.Drawing.Point(968, 683)
+        Me.txtReceived.Name = "txtReceived"
+        Me.txtReceived.Size = New System.Drawing.Size(52, 38)
+        Me.txtReceived.TabIndex = 424
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Location = New System.Drawing.Point(2, 727)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(160, 13)
+        Me.Label10.TabIndex = 425
+        Me.Label10.Text = "Coded By: Systems Kaizen 2014"
+        '
+        'Panel2
+        '
+        Me.Panel2.BackColor = System.Drawing.Color.Red
+        Me.Panel2.Controls.Add(Me.btn_tag_name)
+        Me.Panel2.Controls.Add(Me.SVLIABLE)
+        Me.Panel2.Controls.Add(Me.Label11)
+        Me.Panel2.Controls.Add(Me.Label12)
+        Me.Panel2.Location = New System.Drawing.Point(493, 611)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(88, 38)
+        Me.Panel2.TabIndex = 426
+        Me.Panel2.Visible = False
+        '
+        'btn_tag_name
+        '
+        Me.btn_tag_name.BackColor = System.Drawing.Color.White
+        Me.btn_tag_name.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_tag_name.Font = New System.Drawing.Font("Microsoft Sans Serif", 35.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_tag_name.Location = New System.Drawing.Point(146, 200)
+        Me.btn_tag_name.Name = "btn_tag_name"
+        Me.btn_tag_name.Size = New System.Drawing.Size(262, 123)
+        Me.btn_tag_name.TabIndex = 269
+        Me.btn_tag_name.UseVisualStyleBackColor = False
+        '
+        'SVLIABLE
+        '
+        Me.SVLIABLE.BackColor = System.Drawing.Color.White
+        Me.SVLIABLE.Font = New System.Drawing.Font("Microsoft Sans Serif", 30.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SVLIABLE.Location = New System.Drawing.Point(146, 129)
+        Me.SVLIABLE.MaxLength = 8
+        Me.SVLIABLE.Name = "SVLIABLE"
+        Me.SVLIABLE.Size = New System.Drawing.Size(262, 53)
+        Me.SVLIABLE.TabIndex = 268
+        Me.SVLIABLE.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.ForeColor = System.Drawing.Color.White
+        Me.Label11.Location = New System.Drawing.Point(19, 69)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(535, 39)
+        Me.Label11.TabIndex = 267
+        Me.Label11.Text = "PLEASE SCAN SUPERVISOR ID"
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label12.ForeColor = System.Drawing.Color.White
+        Me.Label12.Location = New System.Drawing.Point(82, 6)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(420, 62)
+        Me.Label12.TabIndex = 266
+        Me.Label12.Text = "YOU REACHED THE MAXIMUM " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "         SCANNING OF TAG!"
+        '
+        'sv_loginTimer
+        '
+        Me.sv_loginTimer.Interval = 300
+        '
+        'btn_shw_tag
+        '
+        Me.btn_shw_tag.BackColor = System.Drawing.Color.Red
+        Me.btn_shw_tag.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_shw_tag.Font = New System.Drawing.Font("Microsoft Sans Serif", 100.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_shw_tag.Location = New System.Drawing.Point(399, 611)
+        Me.btn_shw_tag.Name = "btn_shw_tag"
+        Me.btn_shw_tag.Size = New System.Drawing.Size(88, 38)
+        Me.btn_shw_tag.TabIndex = 270
+        Me.btn_shw_tag.UseVisualStyleBackColor = False
+        Me.btn_shw_tag.Visible = False
+        '
+        'Panel3
+        '
+        Me.Panel3.BackgroundImage = CType(resources.GetObject("Panel3.BackgroundImage"), System.Drawing.Image)
+        Me.Panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.Panel3.Location = New System.Drawing.Point(4, 652)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(405, 71)
+        Me.Panel3.TabIndex = 427
+        '
+        'Panel5
+        '
+        Me.Panel5.BackColor = System.Drawing.Color.Black
+        Me.Panel5.Controls.Add(Me.GroupBox1)
+        Me.Panel5.Controls.Add(Me.GroupBox2)
+        Me.Panel5.Location = New System.Drawing.Point(669, 248)
+        Me.Panel5.Name = "Panel5"
+        Me.Panel5.Size = New System.Drawing.Size(351, 366)
+        Me.Panel5.TabIndex = 428
+        '
+        'Form1
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.ClientSize = New System.Drawing.Size(1024, 768)
+        Me.Controls.Add(Me.Panel5)
+        Me.Controls.Add(Me.Panel3)
+        Me.Controls.Add(Me.btn_shw_tag)
+        Me.Controls.Add(Me.Panel2)
+        Me.Controls.Add(Me.Label10)
+        Me.Controls.Add(Me.txtReceived)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.Label8)
+        Me.Controls.Add(Me.accountability)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.Label7)
+        Me.Controls.Add(Me.StatusStrip1)
+        Me.Controls.Add(Me.appendTagId)
+        Me.Controls.Add(Me.Panel4)
+        Me.Controls.Add(Me.lblID)
+        Me.Controls.Add(Me.lblFName)
+        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.lblDepartment)
+        Me.Controls.Add(Me.lblTitleR)
+        Me.Controls.Add(Me.deliveryScan)
+        Me.Controls.Add(Me.idscan)
+        Me.Name = "Form1"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Panel4.ResumeLayout(False)
+        Me.Panel4.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.StatusStrip1.ResumeLayout(False)
+        Me.StatusStrip1.PerformLayout()
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
+        Me.GroupBox2.ResumeLayout(False)
+        Me.GroupBox2.PerformLayout()
+        Me.Panel2.ResumeLayout(False)
+        Me.Panel2.PerformLayout()
+        Me.Panel5.ResumeLayout(False)
+        Me.ResumeLayout(False)
+        Me.PerformLayout()
+
+    End Sub
+    Friend WithEvents Panel4 As System.Windows.Forms.Panel
+    Friend WithEvents machine_name As System.Windows.Forms.Label
+    Friend WithEvents Label6 As System.Windows.Forms.Label
+    Friend WithEvents lblID As System.Windows.Forms.Label
+    Friend WithEvents lblFName As System.Windows.Forms.TextBox
+    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
+    Friend WithEvents lblDepartment As System.Windows.Forms.Label
+    Friend WithEvents lblTitleR As System.Windows.Forms.Label
+    Friend WithEvents deliveryScan As System.Windows.Forms.TextBox
+    Friend WithEvents idscan As System.Windows.Forms.TextBox
+    Friend WithEvents appendTagId As System.Windows.Forms.TextBox
+    Friend WithEvents StatusStrip1 As System.Windows.Forms.StatusStrip
+    Friend WithEvents status_date As System.Windows.Forms.ToolStripStatusLabel
+    Friend WithEvents status_time As System.Windows.Forms.ToolStripStatusLabel
+    Friend WithEvents DateTimer As System.Windows.Forms.Timer
+    Friend WithEvents login As System.Windows.Forms.Timer
+    Friend WithEvents Substring As System.Windows.Forms.Timer
+    Friend WithEvents concatenateTimer As System.Windows.Forms.Timer
+    Friend WithEvents Blink As System.Windows.Forms.Timer
+    Friend WithEvents Label5 As System.Windows.Forms.Label
+    Friend WithEvents Label7 As System.Windows.Forms.Label
+    Friend WithEvents Aweight As System.Windows.Forms.TextBox
+    Friend WithEvents Panel1 As System.Windows.Forms.Panel
+    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents Button12 As System.Windows.Forms.Button
+    Friend WithEvents Button11 As System.Windows.Forms.Button
+    Friend WithEvents btn_oK As System.Windows.Forms.Button
+    Friend WithEvents Button9 As System.Windows.Forms.Button
+    Friend WithEvents Button8 As System.Windows.Forms.Button
+    Friend WithEvents Button7 As System.Windows.Forms.Button
+    Friend WithEvents Button6 As System.Windows.Forms.Button
+    Friend WithEvents Button5 As System.Windows.Forms.Button
+    Friend WithEvents Button4 As System.Windows.Forms.Button
+    Friend WithEvents Button3 As System.Windows.Forms.Button
+    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
+    Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
+    Friend WithEvents perkg As System.Windows.Forms.TextBox
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents SerialPort1 As System.IO.Ports.SerialPort
+    Friend WithEvents accountability As System.Windows.Forms.TextBox
+    Friend WithEvents Label4 As System.Windows.Forms.Label
+    Friend WithEvents Label8 As System.Windows.Forms.Label
+    Friend WithEvents txtReceived As System.Windows.Forms.TextBox
+    Friend WithEvents Label9 As System.Windows.Forms.Label
+    Friend WithEvents Label10 As System.Windows.Forms.Label
+    Friend WithEvents Panel2 As System.Windows.Forms.Panel
+    Friend WithEvents btn_tag_name As System.Windows.Forms.Button
+    Friend WithEvents SVLIABLE As System.Windows.Forms.TextBox
+    Friend WithEvents Label11 As System.Windows.Forms.Label
+    Friend WithEvents Label12 As System.Windows.Forms.Label
+    Friend WithEvents sv_loginTimer As System.Windows.Forms.Timer
+    Friend WithEvents btn_shw_tag As System.Windows.Forms.Button
+    Friend WithEvents Panel3 As System.Windows.Forms.Panel
+    Friend WithEvents Panel5 As System.Windows.Forms.Panel
+
+End Class

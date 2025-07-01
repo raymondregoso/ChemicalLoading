@@ -1,0 +1,356 @@
+﻿Imports System
+Imports System.IO
+Imports System.IO.Ports
+Imports System.Threading
+Imports System.Threading.Thread
+Imports System.IO.Ports.SerialPort
+Imports System.Data.OracleClient
+Imports System.Runtime.InteropServices
+Public Class Form1
+    Dim value1 As String
+    Dim value2 As String
+    Dim value3 As String
+    Dim value4 As String
+    Dim value5 As String
+    Dim value6 As String
+    Dim value7 As String
+    Dim value8 As String
+    Dim value9 As String
+    Dim value10 As String
+    Dim value11 As String
+    Dim value12 As String
+    Dim value13 As String
+    Dim value14 As String
+
+    Dim tank1 As String
+    Dim tank2 As String
+    Dim tank3 As String
+    Dim tank4 As String
+    Dim tank5 As String
+    Dim tank6 As String
+    Dim tank7 As String
+    Dim tank8 As String
+    Dim tank9 As String
+    Dim tank10 As String
+    Dim tank11 As String
+    Dim tank12 As String
+    Dim tank13 As String
+    Dim tank14 As String
+
+
+    Private selectedColor As Color
+    Dim selectedBtn As Button
+    Friend pinString As String
+
+    Dim material_no As String
+    Dim tag_no As String
+    Dim weight As String
+    Dim exp_date As String
+    Dim WithEvents SerialPort As New IO.Ports.SerialPort
+    Dim Connect_String As String = "data source=barcode;user id=ramon;password=systems"
+    Dim CodePath As String = "C:\Users\ramon.santos\Documents\Visual Studio 2013\Projects\TESTINGS\MixingChemicalLoadingver09242014\MixingChemicalLoadingver09242014\bin\Debug\Configuration\Config.txt"
+    Dim CodePath_value_kgs As String = "C:\Users\ramon.santos\Documents\Visual Studio 2013\Projects\TESTINGS\MixingChemicalLoadingver09242014\MixingChemicalLoadingver09242014\bin\Debug\Configuration\TagKgs.txt"
+    Dim Material_tags As String = "C:\Users\ramon.santos\Documents\Visual Studio 2013\Projects\TESTINGS\MixingChemicalLoadingver09242014\MixingChemicalLoadingver09242014\bin\Debug\Configuration\Tags.txt"
+
+    Dim RXbyte As Byte
+    <DllImport("user32")> _
+    Private Shared Function HideCaret(ByVal hWnd As IntPtr) As Integer
+    End Function
+    Public Sub outputReset()
+
+    End Sub
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Configuration()
+        ConnectSerial()
+        material_tag_all()
+        Configuration_value_kgs()
+        ' Blink.Enabled = True
+        DateTimer.Enabled = True
+        login.Enabled = True
+        Label7.ForeColor = Color.Black
+        Label5.ForeColor = Color.Black
+    End Sub
+    Private Sub ConnectSerial()
+        Try
+            SerialPort.BaudRate = 9600
+            SerialPort.ReadTimeout = 5000
+            SerialPort.PortName = "COM1"
+            SerialPort.Open()
+        Catch
+            SerialPort.Close()
+        End Try
+    End Sub
+    Delegate Sub myMethodDelegate(ByVal [text] As String)
+    Dim myD1 As New myMethodDelegate(AddressOf myShowStringMethod)
+    Sub myShowStringMethod(ByVal myString As String)
+        If idscan.Focused Then
+            idscan.AppendText(myString)
+
+        ElseIf deliveryScan.Focused Then
+            deliveryScan.AppendText(myString)
+            appendTagId.AppendText(myString)
+
+            ' ElseIf Supervisor_Account.SVLIABLE.Focused Then
+            '  Supervisor_Account.SVLIABLE.AppendText(myString)
+        End If
+    End Sub
+    Private Sub SerialPort_DataReceived(ByVal sender As Object, ByVal e As System.IO.Ports.SerialDataReceivedEventArgs) Handles SerialPort.DataReceived
+        Dim str As String = SerialPort.ReadExisting()
+        Invoke(myD1, str)
+    End Sub
+    Public Sub Configuration()
+        Dim reader As New System.IO.StreamReader(CodePath)
+        Dim allLines As List(Of String) = New List(Of String)
+        Do While Not reader.EndOfStream
+            allLines.Add(reader.ReadLine())
+        Loop
+        reader.Close()
+        Me.Text = ReadLine(2, allLines)
+        machine_name.Text = ReadLine(2, allLines)
+
+       
+
+    End Sub
+    Public Function ReadLine(lineNumber As Integer, lines As List(Of String)) As String
+        Return lines(lineNumber - 1)
+    End Function
+    Private Sub DateTimer_Tick(sender As Object, e As EventArgs) Handles DateTimer.Tick
+        status_date.Text = DateTime.Now.ToString("MM-dd-yyyy")
+        status_time.Text = Date.Now.ToString("h:mm:ss tt")
+
+    End Sub
+    Private Sub idscan_Enter(ByVal sender As Object, ByVal e As System.EventArgs) Handles idscan.Enter
+        idscan.BackColor = System.Drawing.Color.Red
+    End Sub
+    Private Sub idscan_GotFocus(ByVal sender As Object, ByVal e As System.EventArgs) Handles idscan.GotFocus
+        HideCaret(idscan.Handle)
+    End Sub
+    Private Sub idscan_Leave(ByVal sender As Object, ByVal e As System.EventArgs) Handles idscan.Leave
+        idscan.BackColor = System.Drawing.Color.Black
+    End Sub
+    Private Sub deliveryScan_Enter(ByVal sender As Object, ByVal e As System.EventArgs) Handles deliveryScan.Enter
+        deliveryScan.BackColor = System.Drawing.Color.Red
+    End Sub
+    Private Sub deliveryScan_Leave(ByVal sender As Object, ByVal e As System.EventArgs) Handles deliveryScan.Leave
+        deliveryScan.BackColor = System.Drawing.Color.Black
+    End Sub
+    Private Sub deliveryScan_GotFocus(ByVal sender As Object, ByVal e As System.EventArgs) Handles deliveryScan.GotFocus
+        HideCaret(deliveryScan.Handle)
+    End Sub
+    Private Sub appendTagId_GotFocus(ByVal sender As Object, ByVal e As System.EventArgs) Handles appendTagId.GotFocus
+        HideCaret(appendTagId.Handle)
+    End Sub
+    Public Sub idone()
+        Dim cn As New OracleConnection
+        Dim cmd As New OracleCommand
+        Dim dr As OracleDataReader
+        cn.ConnectionString = Connect_String
+        cmd.Connection = cn
+        cn.Open()
+        cmd.CommandText = "select * from barcodeapp.HRD_EMPLOYEE1 WHERE EMP_NO = '" & idscan.Text & "'"
+        dr = cmd.ExecuteReader
+        Try
+            If dr.Read Then
+                lblID.Text = dr("EMP_NO")
+                lblFName.Text = dr("FIRST_NAME") & Space(2) & dr("LAST_NAME")
+                lblDepartment.Text = dr("SECTION_DESC")
+                lblTitleR.Text = dr("JOB_DESC")
+                Dim id As String = idscan.Text
+                Dim folder As String = "\\10.79.1.205\photos"
+                Dim filename As String = System.IO.Path.Combine(folder, id & ".jpg")
+                PictureBox1.Image = Image.FromFile(filename)
+
+                idscan.Text = String.Empty
+                idscan.Enabled = False
+
+                deliveryScan.Enabled = True
+                deliveryScan.Focus()
+            Else
+                ' IdError.Visible = True
+            End If
+        Catch ex As Exception
+            dr.Close()
+            dr.Dispose()
+            cn.Dispose()
+            cn.Close()
+        End Try
+    End Sub
+    Private Sub login_Tick(sender As Object, e As EventArgs) Handles login.Tick
+        If idscan.Text = String.Empty Then
+        Else
+            idone()
+            login.Enabled = False
+        End If
+    End Sub
+    Private Sub Substring_Tick(sender As Object, e As EventArgs) Handles Substring.Tick
+        Dim main As String
+        Try
+            If deliveryScan.Text = "" Then
+                main = ""
+            Else
+                main = deliveryScan.Text
+            End If
+            deliveryScan.Text = main.Substring(4, main.Length - (39))
+        Catch ex As Exception
+
+        End Try
+    End Sub
+    Private Sub deliveryScan_TextChanged(sender As Object, e As EventArgs) Handles deliveryScan.TextChanged
+        If deliveryScan.Text = String.Empty Then
+            concatenateTimer.Enabled = False
+        Else
+            concatenateTimer.Enabled = True
+            Substring.Enabled = True
+        End If
+    End Sub
+    Public Sub Configuration_value_kgs()
+        Try
+            Dim reader As New System.IO.StreamReader(CodePath_value_kgs)
+            Dim allLines As List(Of String) = New List(Of String)
+            Do While Not reader.EndOfStream
+                allLines.Add(reader.ReadLine())
+            Loop
+            reader.Close()
+            value1 = ReadLine1(2, allLines)
+            value2 = ReadLine1(3, allLines)
+            value3 = ReadLine1(4, allLines)
+            value4 = ReadLine1(5, allLines)
+            value5 = ReadLine1(6, allLines)
+            value6 = ReadLine1(7, allLines)
+            value7 = ReadLine1(8, allLines)
+            value8 = ReadLine1(9, allLines)
+            value9 = ReadLine1(10, allLines)
+            value10 = ReadLine1(11, allLines)
+            value11 = ReadLine1(12, allLines)
+            value12 = ReadLine1(13, allLines)
+            value13 = ReadLine1(14, allLines)
+            value14 = ReadLine1(15, allLines)
+        Catch ex As Exception
+
+        End Try
+    End Sub
+    Public Function ReadLine1(lineNumber As Integer, lines As List(Of String)) As String
+        Return lines(lineNumber - 1)
+    End Function
+    Public Sub material_tag_all()
+        Try
+            Dim reader As New System.IO.StreamReader(Material_tags)
+            Dim allLines As List(Of String) = New List(Of String)
+            Do While Not reader.EndOfStream
+                allLines.Add(reader.ReadLine())
+            Loop
+            reader.Close()
+            tank1 = ReadLine2(2, allLines)
+            tank2 = ReadLine2(3, allLines)
+            tank3 = ReadLine2(4, allLines)
+            tank4 = ReadLine2(5, allLines)
+            tank5 = ReadLine2(6, allLines)
+            tank6 = ReadLine2(7, allLines)
+            tank7 = ReadLine2(8, allLines)
+            tank8 = ReadLine2(9, allLines)
+            tank9 = ReadLine2(10, allLines)
+            tank10 = ReadLine2(11, allLines)
+            tank11 = ReadLine2(12, allLines)
+            tank12 = ReadLine2(13, allLines)
+            tank13 = ReadLine2(14, allLines)
+            tank14 = ReadLine2(15, allLines)
+        Catch ex As Exception
+
+        End Try
+    End Sub
+    Public Function ReadLine2(lineNumber As Integer, lines As List(Of String)) As String
+        Return lines(lineNumber - 1)
+    End Function
+    Public Sub Concatenate()
+        Dim main As String
+        Try
+            If appendTagId.Text = "" Then
+                main = ""
+            Else
+                main = appendTagId.Text
+            End If
+            material_no = main.Substring(4, main.Length - (39))
+            tag_no = main.Substring(16, main.Length - (36))
+            weight = main.Substring(26, main.Length - (40))
+            exp_date = main.Substring(30, main.Length - (36))
+
+            If material_no = tank1 Then
+                perkg.Text = value1
+            ElseIf material_no = tank2 Then
+                perkg.Text = value2
+            ElseIf material_no = tank3 Then
+                perkg.Text = value3
+            ElseIf material_no = tank4 Then
+                perkg.Text = value4
+            ElseIf material_no = tank5 Then
+                perkg.Text = value5
+            ElseIf material_no = tank6 Then
+                perkg.Text = value6
+            ElseIf material_no = tank7 Then
+                perkg.Text = value7
+            ElseIf material_no = tank8 Then
+                perkg.Text = value8
+            ElseIf material_no = tank9 Then
+                perkg.Text = value9
+            ElseIf material_no = tank10 Then
+                perkg.Text = value10
+            ElseIf material_no = tank11 Then
+                perkg.Text = value11
+            ElseIf material_no = tank12 Then
+                perkg.Text = value12
+            ElseIf material_no = tank13 Then
+                perkg.Text = value13
+            ElseIf material_no = tank14 Then
+                perkg.Text = value14
+            End If
+        Catch ex As Exception
+            appendTagId.Text = String.Empty
+            deliveryScan.Text = String.Empty
+        End Try
+
+    End Sub
+    Private Sub concatenateTimer_Tick(sender As Object, e As EventArgs) Handles concatenateTimer.Tick
+        Dim Findstring = IO.File.ReadAllText(CodePath)
+        Dim Lookfor As String = deliveryScan.Text
+        If deliveryScan.Text = String.Empty Then
+        Else
+            Concatenate()
+            If Findstring.Contains(Lookfor) Then
+                If Aweight.Text = String.Empty Then
+                    Panel1.Visible = True
+                End If
+            Else
+                MsgBox("Not Found: " & Lookfor)
+            End If
+
+        End If
+    End Sub
+    Private Sub Blink_Tick(sender As Object, e As EventArgs) Handles Blink.Tick
+        If idscan.Focus Then
+            Label5.ForeColor = Color.Black
+            If Label7.ForeColor = Color.Maroon Then
+                Label7.ForeColor = Color.Red
+            Else
+                Label7.ForeColor = Color.Maroon
+            End If
+        ElseIf deliveryScan.Focus Then
+            Label7.ForeColor = Color.Black
+
+            If Label5.ForeColor = Color.Maroon Then
+                Label5.ForeColor = Color.Red
+            Else
+                Label5.ForeColor = Color.Maroon
+            End If
+        End If
+    End Sub
+    Private Sub keypad1Btn_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button9.Click, Button8.Click, Button7.Click, Button6.Click, Button5.Click, Button4.Click, Button3.Click, Button2.Click, Button11.Click, Button1.Click
+        selectedBtn = CType(sender, Button)
+        With Me
+            Aweight.Text += selectedBtn.Text
+            pinString += selectedBtn.Text
+        End With
+    End Sub
+    Private Sub Button12_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button12.Click
+        Aweight.Text = String.Empty
+    End Sub
+End Class

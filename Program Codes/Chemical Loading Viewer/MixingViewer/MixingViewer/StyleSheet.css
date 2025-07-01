@@ -1,0 +1,152 @@
+﻿body {
+font-family: Calibri;
+font-size: 14px;
+}
+title {
+    icon:url('images/favicon.ico');
+}
+.header
+{
+position: fixed;
+width: 100%;
+top: 0;
+left:0;
+margin: auto;
+height: auto;
+z-index: 10;
+padding: 0;
+border: 0;
+background-color:white;
+}
+select, input[type=text]
+{
+    font-family: 'segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    padding: 7px;
+}
+.header_logo
+{background-color: #000000;
+background-image: url('images/y_logo.jpg');
+height: 85px;
+background-repeat: no-repeat;
+}
+.page_title {
+    font-family: 'segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: #cccccc;
+    text-align: right;
+    padding: 15px 15px 5px 0;
+}
+.dateTime {
+font-family: 'segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: 12px;
+color: #cccccc;
+text-align: right;
+padding: 0px 15px;
+}
+.red_border {
+height: 12px;
+background-color: #990000;
+}
+.revID {
+font-family: 'segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: 10px;
+color: #CCCCCC;
+float: right;
+line-height: 100%;
+padding: 0 5px;
+}
+.content
+{
+margin: 135px auto 1em auto;
+ width:1000px;
+ height:456px;
+ border:1px solid #adadad;
+  border-radius:5px;
+  text-align:center;
+}
+
+.redbtn
+{
+cursor: pointer;
+border: 1px solid #fff;
+background-color: #800000;
+font-family: Tahoma, Helvetica, Verdana, sans-serif, 'segoe UI', Geneva;
+font-size: 12px;
+padding: 10px 20px;
+color: #ccc;
+margin: 5px;
+    height: 40px;
+}
+.redbtn1
+{
+cursor: pointer;
+border: 1px solid #fff;
+background-color: #800000;
+font-family: Tahoma, Helvetica, Verdana, sans-serif, 'segoe UI', Geneva;
+font-size: 12pt;
+padding: 20px 30px;
+color: #ccc;
+margin: 5px;
+}
+.login
+{
+    background-color:white;
+    width:400px;
+    height:200px;
+    vertical-align:central;
+}
+.close
+{
+    position:absolute;
+    margin-top:-85px;
+    margin-left:185px;
+}
+.sign
+{
+    z-index:-9;
+    position:absolute;
+      margin-top:-16px;
+}
+.error
+{
+    position:absolute;
+}
+.check 
+{
+    float:left;
+    text-align:left;
+
+}
+.gridapp 
+{
+    min-height:300px;
+    width:100%;
+    background-color:white;
+    overflow:scroll;
+}
+.pop
+{
+    background-color:rgba(0, 0, 0, 0.82);
+  z-index:10000;
+
+}
+.popup1
+{
+      z-index:10004;
+      width:300px;
+  height:200px;
+  background-color:white;
+}
+ .list
+    {  
+     cursor:pointer;
+        list-style:none;
+      text-overflow:ellipsis;  
+     display:block;
+     overflow:hidden;
+     width:500px;
+     white-space: nowrap;
+     background-color :White;
+    margin-top:0px;
+    }
